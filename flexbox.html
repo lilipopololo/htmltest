@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding:0;
+    }
+    ._1,._2,._3{
+        flex-grow: 1;
+        height: 100px;
+        width: 150px;
+        margin: 0 50px;
+        /* flex-direction: column;竖排 */
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center; /*flex-start,flex-end*/
+        align-items: center;/*flex-start,flex-end*/
+
+    }
+    ._1{
+        background: #f00;
+        order: 3;
+    }
+    ._2{
+        background: #0f0;
+        order:2;
+    }
+    ._3{
+        background: #999;
+        order:1;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="_1"></div>
+        <div class="_2"></div>
+        <div class="_3"></div>
+    </div>
+</body>
+</html>

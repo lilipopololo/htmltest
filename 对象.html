@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .even{
+            background:#f00;
+        }
+        .odd{
+            background:#0f0;
+        }
+    </style>
+</head>
+<body>
+        <!--<ul id="test-list">
+            <li>JavaScript</li>
+            <li>Swift</li>
+            <li>HTML</li>
+            <li>ANSI C</li>
+            <li>CSS</li>
+            <li>DirectX</li>
+        </ul>-->
+        <input type="text" id="ipt">
+        <button id="btn">click</button>
+        <ul id="ul1">
+            <li>1112</li>
+            <li>2222</li>
+            <li>3333</li>
+        </ul>
+    <script src="jquery-3.2.1.js"></script>
+        
+    <script>
+        //     $('#btn').on('click',function(){
+        //     $('#ul1 li').css('background','#fff')
+        //     $('#ul1 li:contains('+$('#ipt').val()+')').css('background','red')
+        // });
+
+        // $(function(){
+        //     $('#ul1>li:odd').addClass("odd");
+        //     $('#ul1>li:even').addClass("even");
+        // })
+
+        /*var arr=['a','b','c','d','e'];
+        var aCopy=arr.slice(0,4);
+        for(var i in aCopy)
+        {
+            alert(arr[i]);
+        }*/
+       /* var arr=['a','b','c','d','e','g','f','3','2','1'];
+        var arr1=arr.sort();
+        for(var i in arr1)
+        {
+            alert(arr1[i]);
+        }*/
+        /*var arr=['1','2','3']
+        var arr1=arr.reverse();
+        for(var i in arr1)
+        {
+            alert(arr1[i]);
+        }*/
+        /*var arr=['1','2'];
+        arr.unshift('a','b');
+        for(var i in arr)
+        {
+            alert(arr[i]);
+        }*/
+        /*var arr=['1','2','3','4'];
+        arr.splice(2,3,'0','9');
+        for(var i in arr)
+        {
+            alert(arr[i]);
+        }*/
+
+
+
+        /*'use strict';
+        var parent = document.getElementById('test-list');
+        for (var chd of parent.children) {
+            alert(chd.innerText);
+            }*/
+        /*function abs(x) {
+            if (typeof x !== 'number') {
+                throw 'Not a number';
+            }
+            if (x >= 0) {
+                return x;
+            } else {
+                return -x;
+            }
+        }
+        x0=abs(undefined);
+        console.log(x0);*/
+        // var a = ['A','B','C'];
+        // var s = new Set(['A','B','C']);
+        // var m = new Map([[1,'x'],[2,'y'],[3,'z']]);
+        // for (var x of a)
+        // {
+        //     alert(x);
+        // }
+        // for (var x of s)
+        // {
+        //     alert(x);
+        // }
+        // for (var x of m)
+        // {
+        //     alert(x);
+        // }
+        // var a = ['A','B','C'];
+        // a.name='Hello';
+        // for ( var x in a)
+        // {
+        //     alert(x);
+        // }
+        // var a = ['A','B','C'];
+        // a.name='Hello';
+        // for ( var x of a)
+        // {
+        //     alert(x);
+        // }
+        // var a = ['A','B','C'];
+        // a.forEach(function(element,index,array)
+        // {
+        //     alert(element);
+        // });
+        // var xiaoming ={
+        //     name:'xiaoming'
+        // }
+        // xiaoming.hasOwnProperty('xiaoming')
+        // xiaoming.hasOwnProperty('xiaohua')
+        // 'use strict';
+        // var arr = [[1, 2, 3], [400, 500, 600], '-'];
+        // alert(arr[1][1]);
+        // var arr = ['小明', '小红', '大军', '阿黄'];
+        // alert(`欢迎${arr.sort().slice(0,arr.length-1)}和${arr[arr.length-1]}同学！`);
+        // var qian=arr.slice(0,arr.length-1).toString;
+        // var hou=arr.slice(arr.length-1).toString;
+        // alert(`欢迎${qian}和${hou}同学!`);
+        // var m = new Map();
+        // m.set('dog','barking');
+        // m.set('cat','playing');
+        // alert(m.get('dog'));
+        // var s = new Set([1, 2, 3, 3, '3'])//为什么'3'不能循环出来
+        // s.add(4);
+        // for(var a of s)
+        // {
+        //     alert(a);
+        // }
+        /*function foo(x)
+        {
+            alert(x);
+            for (var i = 0;i < arguments.length;i++)
+            {
+                alert(arguments[i]);
+            }
+        }
+        foo(10,20,30);*/
+//         function sum(...rest) {
+//         var sum = 0;
+//         for(var i =0;i<arguments.length;i++)
+//         {
+//             sum=sum+rest[i];
+//         }
+//             return sum;
+//         }
+// // 测试:
+//         var i, args = [];
+//         for (i=1; i<=100; i++) {
+//             args.push(i);
+//         }
+//         if (sum() !== 0) {
+//             alert('测试失败: sum() = ' + sum());
+//         } else if (sum(1) !== 1) {
+//             alert('测试失败: sum(1) = ' + sum(1));
+//         } else if (sum(2, 3) !== 5) {
+//             alert('测试失败: sum(2, 3) = ' + sum(2, 3));
+//         } else if (sum.apply(null, args) !== 5050) {//???
+//             alert('测试失败: sum(1, 2, 3, ..., 100) = ' + sum.apply(null, args));
+//         } else {
+//             alert('测试通过!');
+//         }
+            /* function getAge() {
+            var y = new Date().getFullYear();
+            return y - this.birth;
+        }
+
+        var xiaoming = {
+            name: '小明',
+            birth: 1990,
+            age: getAge
+        };
+
+        console.log(xiaoming.age()); // 25, 正常结果
+        console.log(getAge()); // NaN */
+/*         var xiaoming = {
+            name: '小明',
+            birth: 1990,
+            age: function () {
+                var that = this; // 在方法内部一开始就捕获this
+                function getAgeFromBirth() {
+                    var y = new Date().getFullYear();
+                    return y - that.birth; // 用that而不是this
+                }
+                return getAgeFromBirth();
+            }
+        };
+
+        console.log(xiaoming.age()); // 25 */
+        // var count = 0;
+        // var oldParseInt = pareInt;//把原来内置的parseInt函数替换
+        // windows.parseInt = function(){
+        //     count +=1;
+        //     return oldParseInt.apply(null,arguments);
+            
+        // };
+        // parseInt('10');
+        // parseInt('20');
+        // parseInt('30');
+        // console.log(count);
+        var obj = {
+            name:'linxin';
+        }
+        function func(firstname,lastname){
+            console.log(firstName+' '+this.name+' '+lastname);
+        }
+        func.apply(obj,['A','B']);
+</script>
+
+</body>
+</html>
